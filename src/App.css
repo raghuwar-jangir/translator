@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Reset some default styles */
+body,
+html,
+h1,
+h2,
+p,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styling */
+body {
+  /* background-color: #f0f0f0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(40, 44, 52, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Box shadow added */
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Input and select styling */
+.input-container {
+  margin-bottom: 20px;
+}
+
+textarea,
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  color: #f0f0f0;
+  /* Text color adjusted for visibility */
+  
+}
+select option {
+  background-color:#1f1f1f ; 
+}
+
+
+textarea:focus,
+select:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: #3498db;
+}
+
+/* Output container styling */
+.output-container {
+  margin-bottom: 20px;
+}
+
+#translated-text {
+  font-style: italic;
+  color: #ffffff;
+}
+
+/* Button styling */
+#submit {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+}
